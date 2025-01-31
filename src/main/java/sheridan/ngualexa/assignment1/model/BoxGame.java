@@ -1,6 +1,8 @@
 package sheridan.ngualexa.assignment1.model;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class BoxGame {
@@ -15,7 +17,7 @@ public class BoxGame {
     public void randomizeBoxes() {
         List<String> prizes = List.of("1","2","3");
         boxes = new ArrayList<>(prizes);
-
+        Collections.shuffle(boxes);
     }
 
     public String selectedBox(int boxIndex) {
