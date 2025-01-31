@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Game Show</title>
 </head>
 <body>
-
+<h1>Pick a Box</h1>
+<form action="/prizepage" method="post">
+    <div>
+        <label><input type="radio" name="box" value="0" required> Box 1</label>
+        <label><input type="radio" name="box" value="1"> Box 2</label>
+        <label><input type="radio" name="box" value="2"> Box 3</label>
+    </div>
+    <button type="submit">Play</button>
+</form>
+<footer>Alexander NNguyen</footer>
 </body>
 </html>

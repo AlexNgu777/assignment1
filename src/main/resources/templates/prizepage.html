@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <link rel="prizepage" type="text/css" href="/styles.css">
+  <title>Result</title>
 </head>
 <body>
-
+<h1>Game Result</h1>
+<p>You selected: <strong>{{ selectedPrize }}</strong></p>
+<h2>All Boxes:</h2>
+<ul>
+  <li>Box 1: {{ allBoxes[0] }}</li>
+  <li>Box 2: {{ allBoxes[1] }}</li>
+  <li>Box 3: {{ allBoxes[2] }}</li>
+</ul>
+<a href="/">Play Again</a>
+<footer>Alexander Nguyen</footer>
 </body>
 </html>
