@@ -6,14 +6,15 @@ import java.util.List;
 
 public class BoxGame {
     private List<String> boxes;
-    private String userPrize;
 
     public BoxGame() {
         this.boxes = new ArrayList<>();
     }
 
     public void randomizeBoxes() {
-        List<String> prizes = List.of("Lump of coal", "$1000000", "Banjo", "Chromebook", "1 BTC", "3", "4");
+        List<String> prizes = List.of("Lump of coal", "$1000000", "Banjo",
+                "Chromebook", "1 BTC", "Truck", "Supercar",
+                "Pokemon Cards", "iPhone 16 Pro Max", "$0.25", "Happy Meal", "A House", "Yacht", "Candy");
         boxes = new ArrayList<>(prizes);
         Collections.shuffle(boxes);
     }

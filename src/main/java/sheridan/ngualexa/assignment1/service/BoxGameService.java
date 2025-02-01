@@ -7,10 +7,9 @@ import sheridan.ngualexa.assignment1.model.BoxGame;
 public class BoxGameService {
     private BoxGame boxGame;
 
-    public BoxGame startGame() {
+    public void startGame() {
         boxGame = new BoxGame();
         boxGame.randomizeBoxes();
-        return boxGame;
     }
 
     public String selectedBox(int boxIndex) {

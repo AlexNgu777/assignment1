@@ -5,14 +5,21 @@
   <title>Result</title>
 </head>
 <body>
-<h1>Game Result</h1>
-<p>You selected: <strong th:text="${selectedPrize}"></strong></p>
-<ul>
-  <li>Box 1: <span th:text="${allBoxes[0]}"></span></li>
-  <li>Box 2: <span th:text="${allBoxes[1]}"></span></li>
-  <li>Box 3: <span th:text="${allBoxes[2]}"></span></li>
-</ul>
-<a href="/">Play Again</a>
+  <h1>Game Result</h1>
+  <img src="/images/box.png" alt="Box" class="box">
+  <p class="prize">You selected: <strong th:text="${selectedPrize}"></strong></p>
+
+  <form action="" class="list">
+    <p>Box 1: <span th:text="${allBoxes[0]}"></span></p>
+    <p>Box 2: <span th:text="${allBoxes[1]}"></span></p>
+    <p>Box 3: <span th:text="${allBoxes[2]}"></span></p>
+    <p>Box 4: <span th:text="${allBoxes[3]}"></span></p>
+    <p>Box 5: <span th:text="${allBoxes[4]}"></span></p>
+    <p>Box 6: <span th:text="${allBoxes[5]}"></span></p>
+    <p>Box 7: <span th:text="${allBoxes[6]}"></span></p>
+  </form>
+
+<a href="/" style="font-weight: bold">Play Again</a>
 <footer>Alexander Nguyen</footer>
 </body>
 </html>
