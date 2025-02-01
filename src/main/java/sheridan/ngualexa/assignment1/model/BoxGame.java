@@ -14,7 +14,9 @@ public class BoxGame {
     public void randomizeBoxes() {
         List<String> prizes = List.of("Lump of coal", "$1000000", "Banjo",
                 "Chromebook", "1 BTC", "Truck", "Supercar",
-                "Pokemon Cards", "iPhone 16 Pro Max", "$0.25", "Happy Meal", "A House", "Yacht", "Candy");
+                "Pokemon Cards", "iPhone 16 Pro Max", "$0.25",
+                "Happy Meal", "A House", "Yacht", "Candy");
+
         boxes = new ArrayList<>(prizes);
         Collections.shuffle(boxes);
     }

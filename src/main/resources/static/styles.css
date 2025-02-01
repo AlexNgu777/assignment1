@@ -1,5 +1,5 @@
 body {
-    font-family: "Times New Roman", serif;
+    font-family: Helvetica, serif;
     text-align: center;
     background-color: white;
 }
@@ -23,7 +23,7 @@ button {
     margin-top: 2%;
     width: 10%;
     font-weight: bold;
-    font-family: "Times New Roman", serif;
+    font-family: Helvetica, serif;
 }
 
 footer {
