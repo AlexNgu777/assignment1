@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-  <link rel="prizepage" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
   <title>Result</title>
 </head>
 <body>
 <h1>Game Result</h1>
-<p>You selected: <strong>{{ selectedPrize }}</strong></p>
-<h2>All Boxes:</h2>
+<p>You selected: <strong th:text="${selectedPrize}"></strong></p>
 <ul>
-  <li>Box 1: {{ allBoxes[0] }}</li>
-  <li>Box 2: {{ allBoxes[1] }}</li>
-  <li>Box 3: {{ allBoxes[2] }}</li>
+  <li>Box 1: <span th:text="${allBoxes[0]}"></span></li>
+  <li>Box 2: <span th:text="${allBoxes[1]}"></span></li>
+  <li>Box 3: <span th:text="${allBoxes[2]}"></span></li>
 </ul>
 <a href="/">Play Again</a>
 <footer>Alexander Nguyen</footer>

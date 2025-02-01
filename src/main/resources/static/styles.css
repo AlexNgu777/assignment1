@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    color: #333;
+    background: darkcyan;
+    border-radius: 40px;
+    width: 40%;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.banner {
+    width: 25%;
+    height: 15%;
+}

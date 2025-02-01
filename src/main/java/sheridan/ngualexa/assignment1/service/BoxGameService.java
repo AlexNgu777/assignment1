@@ -14,10 +14,16 @@ public class BoxGameService {
     }
 
     public String selectedBox(int boxIndex) {
-        return boxGame.selectedBox(boxIndex);
+        if (boxGame == null) {
+            startGame();
+        }
+        return boxGame.selectBox(boxIndex);
     }
 
     public BoxGame getGame() {
+        if (boxGame == null) {
+            startGame();
+        }
         return boxGame;
     }
 }

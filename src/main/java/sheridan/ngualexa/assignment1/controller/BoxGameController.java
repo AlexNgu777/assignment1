@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import sheridan.ngualexa.assignment1.model.BoxGame;
 import sheridan.ngualexa.assignment1.service.BoxGameService;
 
-
 @Controller
 public class BoxGameController {
     @Autowired
@@ -19,7 +18,7 @@ public class BoxGameController {
     public String playPage(Model model) {
         gameService.startGame();
         model.addAttribute("boxes", gameService.getGame().getBoxes());
-        return "play";
+        return "gamepage";
     }
 
     @PostMapping("/prizepage")

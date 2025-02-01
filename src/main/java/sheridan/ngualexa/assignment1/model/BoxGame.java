@@ -1,12 +1,10 @@
 package sheridan.ngualexa.assignment1.model;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class BoxGame {
-
     private List<String> boxes;
     private String userPrize;
 
@@ -15,14 +13,13 @@ public class BoxGame {
     }
 
     public void randomizeBoxes() {
-        List<String> prizes = List.of("1","2","3");
+        List<String> prizes = List.of("Lump of coal", "$1000000", "Banjo", "Chromebook", "1 BTC", "3", "4");
         boxes = new ArrayList<>(prizes);
         Collections.shuffle(boxes);
     }
 
-    public String selectedBox(int boxIndex) {
-        this.userPrize = boxes.get(boxIndex);
-        return userPrize;
+    public String selectBox(int boxIndex) {
+        return boxes.get(boxIndex);
     }
 
     public List<String> getBoxes() {
